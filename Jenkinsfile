@@ -1,9 +1,6 @@
 pipeline{
 
     agent any
-    tools {
-        maven "Maven-3.8.2"
-    }
 
     parameters{
         string(name:"OPERATION", defaultValue:"package", description:"Operación maven a realizar")
